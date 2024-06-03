@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Biodata</title>
+   <link rel="stylesheet" href="tugasVIIIStyle.css">
+</head>
+<body>
+   <main>
+      <center>
+         <h1>FORMULIR PENDAFTARAN ORMAWA</h1>
+      </center>
+         <form  method="post" id="formulir">
+            <span class="nama">
+               <input type="text" id="namaAwal" placeholder="Nama Depan" required>
+               <input type="text" id="namaAkhir" placeholder="Nama Belakang">
+            </span>
+            <input type="number" id="nim" placeholder="NIM" required minlength="10">
+            <input type="email" id="email" placeholder="Email@webmail.uad.ac.id" required>
+            <input type="number" id="umur" placeholder="Umur" required>
+            <div class="jurusan">
+               <div class="fakultas">
+                  <select name="fakultas" id="fakultas">
+                     <option value="-">Fakultas</option>
+                     <option value="FTI"> Teknologi Industri</option>
+                     <!-- <option value="FEB"> Ekonomi Bisnis</option>
+                     <option value="FPAI"> Pendidikan Agama Islam</option>
+                     <option value="FF">  Farmasi</option>
+                     <option value="FK">  Kedokteran</option> -->
+                  </select>
+               </div>
+               <div class="prodi">
+                  <select name="prodi" id="prodi">
+                     <option value="-">Program Studi</option>
+                     <option value="Informatika">     Informatika</option>
+                     <option value="Teknik Elektro">  Teknik Elektro</option>
+                     <option value="Teknik Industri"> Teknik Industri</option>
+                     <option value="Teknik Kimia">    Teknik Kimia</option>
+                     <option value="Teknologi Pangan">Teknologi Pangan</option>
+                  </select>
+               </div>
+            </div>
+               <textarea id="alamat" placeholder="Alamat Lengkap" rows="3" required></textarea>
+            <div class="kelamin">
+               <label for="">Jenis Kelamin: </label>
+               <span>
+                  <input type="radio" id="sexMale" name="kelamin" value="Pria" required>
+                  <label for="sexMale">Pria</label>
+               </span>
+               <span>
+                  <input type="radio" id="sexFemale" name="kelamin" value="Wanita">
+                  <label for="sexFemale">Wanita</label>
+               </span>
+            </div>
+            <span class="konfirm">
+               <input type="checkbox" id="konfirm">
+               <label for="konfirm">Saya telah mengisi formulir ini dengan sebenar-benarnya.</label>
+            </span>
+            <input type="submit" value="serahkan">
+         </form>
+   </main>
+   <script src="fungsiVIIIJS.js"></script>
+</body>
+</html>
+        
